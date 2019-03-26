@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!---->
+<!---->
+<html>
+<!---->
+
+<head>
+  <link rel="stylesheet" href="../static/css/styles.css" />
+  <meta charset="UTF-8">
+  <title>Café Choco-Latte</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Café Choco-Latte</h1>
+      <h2>
+        Fantastiskt kaffe &amp; läckra bakverk
+      </h2>
+      <p>
+        Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren. Vi är en
+        plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation. Vi vill ge dig hög
+        kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Hem</a></li>
+          <li><a href="#">Kaffemeny</a></li>
+          <li><a href="#">Chockladmeny</a></li>
+          <li><a href="chockladprovning.html">Chockladprovning</a></li>
+          <li><a href="omoss.html">Om oss</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Bokningsformulär</h2>
+
+    <form action="#" method="POST">
+      <fieldset required>
+        <legend>Välj datum:</legend>
+        <p>
+          <input type="radio" name="datum" id="Datum1" value="30 april" />
+          <label for="Datum1">30 april</label>
+        </p>
+        <p>
+          <input type="radio" name="datum" id="Datum2" value="2 maj" />
+          <label for="Datum2">2 maj</label>
+        </p>
+        <p>
+          <input type="radio" name="datum" id="Datum3" value="7 maj" />
+          <label for="Datum3">7 maj</label>
+        </p>
+        <p>
+          <input type="radio" name="datum" id="Datum4" value="9 maj" />
+          <label for="Datum4">9 maj</label>
+        </p>
+        <p>
+          <input type="radio" name="datum" id="Datum5" value="14 maj" />
+          <label for="Datum5">14 maj</label>
+        </p>
+        <p>
+          <input type="radio" name="datum" id="Datum6" value="16 maj" />
+          <label for="Datum6">16 maj</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Välj antal personer:</legend>
+        <select name="antal" id="Antal" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fyll i dina uppgifter:</legend>
+        <p>
+          <label for="Namn">Förnamn:</label>
+          <input type="text" name="namn" id="Namn" placeholder="Bengt" required />
+        </p>
+        <p>
+          <label for="Efternamnamn">Efternamn:</label>
+          <input type="text" name="efternamn" id="Efternamn" placeholder="Karlsson" required />
+        </p>
+        <p>
+          <label for="mobil">Mobil:</label>
+          <input type="text" name="mobil" id="Mobil" placeholder="070-555 5555" />
+        </p>
+        <p>
+          <label for="epost">Epost:</label>
+          <input type="text" name="epost" id="Epost" placeholder="bengt.karlsson@gmail.com" required />
+        </p>
+        <p><label for="Meddelande">Meddelande:</label>
+          <textarea name="meddelande" id="Meddelande" cols="30" rows="3">
+      Ytterligare information och önskemål...
+      </textarea>
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" name="submit" id="Submit" value="Boka" />
+      </p>
+    </form>
+    <footer>
+      Café Choco-Latte &copy; 2019 | <a href="#">Privacy Policy</a>
+    </footer>
+  </div><!-- /#wrapper -->
+
+</body>
+
+</html>
