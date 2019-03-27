@@ -1,58 +1,66 @@
-<!DOCTYPE html>
-<!---->
-<!---->
+<!DOCTYPE html><!-- Tell the browser we're using HTML5. -->
+<!-- HTML opening tag that is at the beginning of all HTML documents. Remnant from the past.-->
 <html>
-<!---->
+
+<!-- Declare metadata -->
 
 <head>
-  <!---->
+  <!-- Apply stylesheet to the HTML elements -->
   <link rel="stylesheet" href="static/css/styles.css" />
-  <!---->
+  <!-- Set character encoding to be UTF-8 -->
   <meta charset="UTF-8">
-  <!---->
+  <!-- Set title seen in the tab and when added to favourites -->
   <title>Café Choco-Latte</title>
 </head>
-<!---->
+
+<!-- Include content of webpage -->
 
 <body>
+  <!-- Encapulate the surrounding page elements and apply styling as defined in the stylesheet for the id wrapper -->
   <div id="wrapper">
-    <!---->
+    <!-- New element in html5 replacing the <div class="header"> tag commonly found in html docs.
+    Typically contains header, logo, navbar and search elements -->
     <header>
-      <!---->
+      <!-- Set the first header on a page. Should exist 1 for each page, but no more than 2 -->
       <h1>Café Choco-Latte</h1>
-      <!---->
+      <!-- Set the second header on the page. h2 has no restriction on plurality but should always come after an h1.-->
       <h2>
         Fantastiskt kaffe &amp; läckra bakverk
       </h2>
-      <!---->
+      <!-- Set paragraph. Encapsulates text and formats it. Default styling adds a line break to the end of a paragraph -->
       <p>
         Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren. Vi är en
         plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation. Vi vill ge dig hög
         kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.
       </p>
-      <!---->
+      <!-- Also new with HTML5. Used as a div for navigation. -->
       <nav>
         <ul>
           <li><a href="#">Hem</a></li>
           <li><a href="#">Kaffemeny</a></li>
           <li><a href="#">Chockladmeny</a></li>
           <li><a href="pages/chockladprovning.html">Chockladprovning</a></li>
-          <li><a href="pages/omoss.html">Om oss</a></li>
+          <li><a href="#">Om oss</a></li>
         </ul>
       </nav>
     </header>
-    <!---->
+    <!-- HTML5 element. Sections contain information of related content.
+    Sections in <articles> tags are like chapters in a book.  -->
     <section id="kaffemeny">
       <h3>
         Fantastiskt kaffe
       </h3>
-      <!---->
+      <!-- Add image to page. src specifies the relative location of the file.
+      alt provides a descriptive text used for accessibility, or in cases where the image doesn't load.
+      Width and height provides the browser with information on the size which it can allocate on the page before
+      the image loads -->
       <img src="static/images/cols-img.png" alt="Rykande het kopp kaffe" width="59" height="80" />
       <p>
         Intensiva dofter, fylliga smaker och oavsett rostning och tillredning finns kaffe för alla smaker. Vårt kaffe är
         fantastiskt!
       </p>
-      <!---->
+      <!-- Provide an a link to the URI set through href. # is commonly used as a placeholder
+      but serves the purpose of accessing anchors on the same page. -->
       <p><a href="#">Kaffemeny</a></p>
     </section><!-- /#kaffemeny  -->
     <section id="chockladprovning">
