@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!---->
-<!---->
-<html>
-<!---->
+<html lang=sv>
 
 <head>
   <link rel="stylesheet" href="../static/css/styles.css" />
@@ -34,12 +31,17 @@
     </header>
 
     <h2>Bokningsformulär</h2>
-
+    <!-- Add form that can be filled in and submitted for processing by the backend implementation -->
     <form action="#" method="POST">
-      <fieldset required>
+      <!-- Group together similar form elements -->
+      <fieldset>
+        <!-- Provide a descriptive text for the group of elements -->
         <legend>Välj datum:</legend>
         <p>
+          <!-- Crete a radio button which will be parsed by the backend by the value given for "name".
+           If this radio button was selected the value returned when parsing datum would be the string '30 april' -->
           <input type="radio" name="datum" id="Datum1" value="30 april" />
+          <!-- Label placed after the radio button -->
           <label for="Datum1">30 april</label>
         </p>
         <p>
@@ -66,7 +68,9 @@
 
       <fieldset>
         <legend>Välj antal personer:</legend>
+        <!-- Add dropdown menu -->
         <select name="antal" id="Antal" required>
+          <option value="" disabled selected>Välj antal</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -86,21 +90,30 @@
         <legend>Fyll i dina uppgifter:</legend>
         <p>
           <label for="Namn">Förnamn:</label>
+          <!-- Add text input area with a placeholder that will vanish upon typing.
+          The 'required' attribute means it has to be filled in before the user
+          can submit the form -->
           <input type="text" name="namn" id="Namn" placeholder="Bengt" required />
         </p>
         <p>
-          <label for="Efternamnamn">Efternamn:</label>
+          <label for="Efternamn">Efternamn:</label>
           <input type="text" name="efternamn" id="Efternamn" placeholder="Karlsson" required />
         </p>
         <p>
-          <label for="mobil">Mobil:</label>
-          <input type="text" name="mobil" id="Mobil" placeholder="070-555 5555" />
+          <label for="Mobil">Mobil:</label>
+          <input type="text" name="mobil" id="Mobil" placeholder="0705555555" />
         </p>
         <p>
-          <label for="epost">Epost:</label>
-          <input type="text" name="epost" id="Epost" placeholder="bengt.karlsson@gmail.com" required />
+          <label for="Epost">Epost:</label>
+          <!-- Add email field where the input has to be on the form as specified by
+          the regex pattern, i.e. almostWhatever@aMoreRestrictiveAddress.aRestrictiveDomain -->
+          <input type="text" name="epost" id="Epost"
+            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            placeholder="bengt.karlsson@gmail.com" required />
         </p>
         <p><label for="Meddelande">Meddelande:</label>
+          <!-- Add a large text area for free texst taking up 30 characters in width (cols)
+        and 3 rows in height. -->
           <textarea name="meddelande" id="Meddelande" cols="30" rows="3">
       Ytterligare information och önskemål...
       </textarea>
